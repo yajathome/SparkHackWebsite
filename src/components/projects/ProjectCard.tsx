@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Edit, Trash, Github, Youtube, ExternalLink } from 'lucide-react';
-import { Project } from '../../lib/supabase';
+
 
 type ProjectCardProps = {
   project: Project;

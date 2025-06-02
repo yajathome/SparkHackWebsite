@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
-import { Project } from '../../lib/supabase';
+
 
 type ProjectFormProps = {
   onSubmit: (data: Partial<Project>) => void;

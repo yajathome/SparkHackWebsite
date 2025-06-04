@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Menu, X, Zap } from 'lucide-react';
-import { useAuth } from '../../context/AuthContext';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { user, signOut, isAdmin } = useAuth();
   const location = useLocation();
 
   useEffect(() => {
@@ -57,7 +55,7 @@ const Navbar: React.FC = () => {
         <ul className="hidden md:flex space-x-8 items-center">
           <NavItem to="/">Home</NavItem>
           <NavItem to="/about">About</NavItem>
-          {user ? (
+          {/* {user ? (
             <>
               <NavItem to="/dashboard">Dashboard</NavItem>
               {isAdmin && <NavItem to="/admin">Admin</NavItem>}
@@ -78,7 +76,7 @@ const Navbar: React.FC = () => {
                 Register
               </Link>
             </>
-          )}
+          )} */}
         </ul>
       </div>
 
@@ -91,7 +89,7 @@ const Navbar: React.FC = () => {
         <div className="px-4 pt-2 pb-4 space-y-2 bg-slate-900/95 shadow-lg">
           <MobileNavItem to="/">Home</MobileNavItem>
           <MobileNavItem to="/about">About</MobileNavItem>
-          {user ? (
+          {/* {user ? (
             <>
               <MobileNavItem to="/dashboard">Dashboard</MobileNavItem>
               {isAdmin && <MobileNavItem to="/admin">Admin</MobileNavItem>}
@@ -112,7 +110,7 @@ const Navbar: React.FC = () => {
                 Register
               </Link>
             </>
-          )}
+          )} */}
         </div>
       </motion.div>
     </motion.nav>

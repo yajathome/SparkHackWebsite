@@ -13,7 +13,7 @@ const About: React.FC = () => {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">
-            About SparkHack
+            About HackSpire
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             An interschool hackathon dedicated to inspiring the next generation of innovators
@@ -30,7 +30,7 @@ const About: React.FC = () => {
             <BookOpenText className="h-12 w-12 text-indigo-500 mb-6" />
             <h2 className="text-2xl font-semibold text-white mb-4">Inspired by Wings of Fire</h2>
             <p className="text-gray-300">
-              SparkHack draws inspiration from Dr. APJ Abdul Kalam's autobiography "Wings of Fire," 
+              HackSpire draws inspiration from Dr. APJ Abdul Kalam's autobiography "Wings of Fire," 
               embracing his vision of empowering youth through education, innovation, and 
               determination. We believe in nurturing the spark of creativity in every student.
             </p>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
             <h2 className="text-2xl font-semibold text-white mb-4">School Mission</h2>
             <p className="text-gray-300">
               In alignment with our school's mission to provide comprehensive education that goes 
-              beyond textbooks, SparkHack creates an environment where students can apply classroom 
+              beyond textbooks, HackSpire creates an environment where students can apply classroom 
               knowledge to real-world challenges, fostering practical skills and innovative thinking.
             </p>
           </motion.div>
@@ -58,14 +58,14 @@ const About: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-3xl font-bold text-center text-white mb-12"
         >
-          What Makes SparkHack Special
+          What Makes HackSpire Special
         </motion.h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           <FeatureCard 
             icon={<Rocket className="h-10 w-10 text-indigo-500" />}
             title="Innovation Focus"
-            description="SparkHack encourages students to think outside the box and develop creative solutions to real-world problems."
+            description="HackSpire encourages students to think outside the box and develop creative solutions to real-world problems."
             delay={0.5}
           />
           
@@ -100,7 +100,7 @@ const About: React.FC = () => {
           <FeatureCard 
             icon={<Rocket className="h-10 w-10 text-indigo-500" />}
             title="Future Ready"
-            description="SparkHack prepares students for future academic and career opportunities in technology and innovation."
+            description="HackSpire prepares students for future academic and career opportunities in technology and innovation."
             delay={1.0}
           />
         </div>
@@ -113,7 +113,7 @@ const About: React.FC = () => {
         >
           <h2 className="text-2xl font-semibold text-white mb-4">Our Vision</h2>
           <p className="text-gray-300">
-            SparkHack aims to inspire the next generation of innovators by providing a platform 
+            HackSpire aims to inspire the next generation of innovators by providing a platform 
             where students can explore their potential, collaborate with peers, and transform their 
             ideas into reality. We believe that every student has the capacity to create meaningful change, 
             and we're committed to nurturing that spark of creativity and innovation.

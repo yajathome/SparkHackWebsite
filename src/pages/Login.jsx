@@ -48,7 +48,7 @@ function Login() {
                 <input type="text" placeholder="Team Name" name="team_name" id="team_name" />
                 
                 <label htmlFor="password">Password</label>
-                <input type="text" placeholder="Password" name="password" id="password" />
+                <input type="password" placeholder="Password" name="password" id="password" />
 
                 <button type="submit">Login</button>
             </form>

@@ -78,7 +78,7 @@ function Register() {
                 <br />
 
                 <label htmlFor="password">Password:</label>
-                <input type="text" placeholder="Password" name="password" id="password" style={{"color": "#000"}} />
+                <input type="password" placeholder="Password" name="password" id="password" style={{"color": "#000"}} />
 
                 <br />
                 <br />

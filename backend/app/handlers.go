@@ -6,7 +6,7 @@ import (
 )
 
 func (app *Application) Login(w http.ResponseWriter, r *http.Request) {
-	var input User
+	var input Team
 	err := app.readJSON(r, &input)
 	if err != nil {
 		log.Println(err)
@@ -14,7 +14,7 @@ func (app *Application) Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	loggedIn, user, message, err := app.LoginUser(input)
+	loggedIn, team, message, err := app.LoginTeam(input)
 	if err != nil {
 		log.Println(err)
 		app.errorJSON(w, err, http.StatusAccepted)
@@ -23,11 +23,11 @@ func (app *Application) Login(w http.ResponseWriter, r *http.Request) {
 
 	output := struct {
 		LoggedIn bool   `json:"logged_in"`
-		User     User   `json:"user"`
+		Team     Team   `json:"team"`
 		Message  string `json:"message"`
 	}{
 		LoggedIn: loggedIn,
-		User:     user,
+		Team:     team,
 		Message:  message,
 	}
 
@@ -40,7 +40,7 @@ func (app *Application) Login(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *Application) Register(w http.ResponseWriter, r *http.Request) {
-	var input User
+	var input Team
 	err := app.readJSON(r, &input)
 	if err != nil {
 		log.Println(err)
@@ -49,7 +49,7 @@ func (app *Application) Register(w http.ResponseWriter, r *http.Request) {
 	}
 	log.Println(input)
 
-	message, err := app.AddUser(input)
+	message, err := app.AddTeam(input)
 	if err != nil {
 		log.Println(err)
 		app.errorJSON(w, err, http.StatusBadRequest)

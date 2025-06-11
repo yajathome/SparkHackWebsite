@@ -9,7 +9,7 @@ function Login() {
     const handleLoginSubmit = (event) => {
         event.preventDefault()
 
-        let username = event.target.username.value
+        let team_name = event.target.team_name.value
         let password = event.target.password.value
 
         const requestOptions = {
@@ -18,7 +18,7 @@ function Login() {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                username: username,
+                team_name: team_name,
                 password: password,
             }),
         }
@@ -29,7 +29,7 @@ function Login() {
                 console.log(data)
                 setMessage(data.message)
                 if (data.logged_in) {
-                    sessionStorage.setItem("user", JSON.stringify(data.user))
+                    sessionStorage.setItem("team", JSON.stringify(data.team))
                     navigate("/")
                 } else {
                     return
@@ -44,11 +44,11 @@ function Login() {
         <div>
             <form method="post" onSubmit={handleLoginSubmit} style={{"marginTop": "20%"}}>
                 <h1>Login Page</h1>
-                <label htmlFor="username"></label>
-                <input type="text" placeholder="Username" name="username" id="username" />
+                <label htmlFor="team_name">Team Name</label>
+                <input type="text" placeholder="Team Name" name="team_name" id="team_name" />
                 
-                <label htmlFor="password"></label>
-                <input type="text" placeholder="Password" name="password" id="password" />
+                <label htmlFor="password">Password</label>
+                <input type="password" placeholder="Password" name="password" id="password" />
 
                 <button type="submit">Login</button>
             </form>

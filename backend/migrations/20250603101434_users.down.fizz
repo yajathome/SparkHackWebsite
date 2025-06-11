@@ -1,2 +1,0 @@
-drop_table("users")
-drop_index("users", "users_username_idx")

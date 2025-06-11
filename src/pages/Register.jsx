@@ -15,12 +15,11 @@ function Register() {
         let school_name = event.target.school_name.value
 
         let member_name_list = member_names.split(" ")
-        if (member_name_list.length > 5) {
+        let team_count = member_name_list.length
+        if (team_count > 5) {
             console.log("Too many members. Limit is 5")
             return
         }
-
-        let team_count = member_name_list.length
 
         const requestOptions = {
             method: "POST",

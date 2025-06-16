@@ -10,6 +10,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Admin from './pages/Admin';
 import Logout from "./pages/Logout";
+import AdminLogin from "./pages/AdminLogin.jsx"
 // import { AuthProvider } from './context/AuthContext';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path="/login" element={<Login />} />              
               <Route path="/register" element={<Register />} />
               <Route path="/logout" element={<Logout />} />
+              <Route path="/admin-login" element={<AdminLogin />} ></Route>
             </Routes>
           </main>
           <Footer />

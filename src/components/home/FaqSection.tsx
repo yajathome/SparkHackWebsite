@@ -37,7 +37,7 @@ const faqs: FaqItem[] = [
   {
     id: 6,
     question: "How do I contact the organizers?",
-    answer: "You can contact Divya Ma'am via WhatsApp or email at the contact information provided on the homepage. Our team is ready to assist with any questions you might have!"
+    answer: "You can contact us at the contact information provided on the homepage. Our team is ready to assist with any questions you might have!"
   }
 ];
 

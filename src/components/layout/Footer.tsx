@@ -36,9 +36,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <FooterLink to="#">FAQs</FooterLink>
-              <FooterLink to="#">Rules</FooterLink>
-              <FooterLink to="#">Schedule</FooterLink>
-              <FooterLink to="#">Sponsors</FooterLink>
+              
             </ul>
           </div>
           
@@ -47,7 +45,7 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-2">Whitefield Global School</p>
             <p className="text-gray-400 mb-2">Whitefield</p>
             <p className="text-gray-400 mb-2">Bangalore Karnataka 560066</p>
-            <p className="text-gray-400">Contact Divya Ma'am!</p>
+            
           </div>
         </div>
         

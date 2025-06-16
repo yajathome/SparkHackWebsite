@@ -11,18 +11,18 @@ type FaqItem = {
 const faqs: FaqItem[] = [
   {
     id: 1,
-    question: "What is SparkHack?",
-    answer: "SparkHack is a 2-day interschool hackathon where students can collaborate, innovate, and learn while building projects. It's inspired by Dr. APJ Abdul Kalam's 'Wings of Fire' and aims to foster creativity and technical skills."
+    question: "What is HackSpire?",
+    answer: "HackSpire is a 2-day interschool hackathon where students can collaborate, innovate, and learn while building projects. It's inspired by Dr. APJ Abdul Kalam's 'Wings of Fire' and aims to foster creativity and technical skills."
   },
   {
     id: 2,
     question: "Who can participate?",
-    answer: "SparkHack is open to students from all participating schools. Teams can consist of 2-4 members, and students from different schools can form teams together."
+    answer: "HackSpire is open to students from all participating schools. Teams can consist of 2-4 members, and students from different schools can form teams together."
   },
   {
     id: 3,
     question: "Do I need to know coding to participate?",
-    answer: "While some coding knowledge is helpful, SparkHack welcomes participants with various skills including design, presentation, and problem-solving. Teams benefit from diverse skill sets!"
+    answer: "While some coding knowledge is helpful, HackSpire welcomes participants with various skills including design, presentation, and problem-solving. Teams benefit from diverse skill sets!"
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const faqs: FaqItem[] = [
   {
     id: 6,
     question: "How do I contact the organizers?",
-    answer: "You can contact Divya Ma'am via WhatsApp or email at the contact information provided on the homepage. Our team is ready to assist with any questions you might have!"
+    answer: "You can contact us at the contact information provided on the homepage. Our team is ready to assist with any questions you might have!"
   }
 ];
 

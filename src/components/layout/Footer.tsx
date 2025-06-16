@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2 mb-4">
               <Zap className="h-6 w-6 text-indigo-500" />
               <span className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
-                SparkHack
+                HackSpire
               </span>
             </Link>
             <p className="text-gray-400 mb-4">
@@ -36,9 +36,7 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <FooterLink to="#">FAQs</FooterLink>
-              <FooterLink to="#">Rules</FooterLink>
-              <FooterLink to="#">Schedule</FooterLink>
-              <FooterLink to="#">Sponsors</FooterLink>
+              
             </ul>
           </div>
           
@@ -47,12 +45,12 @@ const Footer: React.FC = () => {
             <p className="text-gray-400 mb-2">Whitefield Global School</p>
             <p className="text-gray-400 mb-2">Whitefield</p>
             <p className="text-gray-400 mb-2">Bangalore Karnataka 560066</p>
-            <p className="text-gray-400">Contact Divya Ma'am!</p>
+            
           </div>
         </div>
         
         <div className="border-t border-indigo-900/30 mt-8 pt-8 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} SparkHack. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} HackSpire. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -3,10 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Zap, Calendar, MapPin, Users } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
-
-const eventStartDate = new Date(Date.now() + 15 * 24 * 60 * 60 * 1000); 
-const eventEndDate = new Date(Date.now() + 17 * 24 * 60 * 60 * 1000); 
-const submissionDeadline = new Date(Date.now() + 16.5 * 24 * 60 * 60 * 1000); 
+const eventStartDate = new Date(2025, 5, 30, 8, 0, 0); // June 30, 2025 at 8:00 AM
+const eventEndDate = new Date(2025, 6, 1, 18, 0, 0);   // July 1, 2025 at 6:00 PM
+const submissionDeadline = new Date(2025, 6, 1, 16, 0, 0); // July 1, 2025 at 4:00 PM
 
 const Hero: React.FC = () => {
   return (
@@ -35,7 +34,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-indigo-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent"
         >
-          SparkHack 2025
+          HackSpire 2025
         </motion.h1>
         
         <motion.p
@@ -53,9 +52,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto"
         >
-          <EventDetail icon={<Calendar className="h-5 w-5 text-indigo-400" />} text="April 15-16, 2025" />
-          <EventDetail icon={<MapPin className="h-5 w-5 text-indigo-400" />} text="School Auditorium" />
-          <EventDetail icon={<Users className="h-5 w-5 text-indigo-400" />} text="Teams of 2-4" />
+          <EventDetail icon={<Calendar className="h-5 w-5 text-indigo-400" />} text="June 30th-1st 2025" />
+          <EventDetail icon={<MapPin className="h-5 w-5 text-indigo-400" />} text="School Classrooms" />
+          <EventDetail icon={<Users className="h-5 w-5 text-indigo-400" />} text="Teams of 5" />
         </motion.div>
         
         <motion.div
@@ -85,7 +84,7 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer" 
               className="px-8 py-3 rounded-full bg-slate-800 text-white font-medium text-lg hover:bg-slate-700 transition-all duration-300"
             >
-              Contact Divya Ma'am
+              Contact Us
             </a>
           </div>
         </motion.div>

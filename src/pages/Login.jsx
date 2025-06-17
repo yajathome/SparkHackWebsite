@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 
 function Login() {
 
-
     const backendLink = "https://wof-backend-06a981c05bce.herokuapp.com"
     const developmentBackendLink = "http://localhost:4444"
 
@@ -46,15 +45,23 @@ function Login() {
 
     return (
         <div>
-            <form method="post" onSubmit={handleLoginSubmit} style={{"marginTop": "20%"}}>
-                <h1 style="color:white">Login Page</h1>
-                <label htmlFor="team_name">Team Name</label>
-                <input type="text" placeholder="Team Name" name="team_name" id="team_name" />
-                
-                <label htmlFor="password">Password</label>
-                <input type="password" placeholder="Password" name="password" id="password" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></link>
+            <form method="post" onSubmit={handleLoginSubmit} style={{ "marginTop":"5%", "color": "#fff"}}>
+                <div style={{"textAlign": "center", "marginBottom": "20px"}}>    
+                    <h1 style={{    fontSize: '60px',fontWeight: '900',background: 'linear-gradient(90deg, #6366f1, #8b5cf6,rgb(205, 101, 189))',WebkitBackgroundClip: 'text',WebkitTextFillColor: 'transparent',display: 'inline-block',}}>Login Page</h1>
+                </div>
+                <div  style={{"textAlign": "center", "marginTop": "6px"}}>  
+                    <label style={{fontWeight:'bold'}} htmlFor="team_name">Team Name</label>
+                    <div style={{display: 'flex', justifyContent: 'center',paddingTop: '10px'}}>
+                        <input type="text" className="form-control" placeholder="Team Name" name="team_name" id="team_name" style={{"width":"50%",}}/>
+                    </div>
+                    <label htmlFor="password">Password</label>
+                    <input type="password" placeholder="Password" name="password" id="password" />
 
-                <button type="submit">Login</button>
+                    <button type="submit">Login</button>
+
+                    {message && <p>{message}</p>}
+                </div>
             </form>
         </div>
     )

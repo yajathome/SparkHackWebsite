@@ -53,8 +53,8 @@ const Hero: React.FC = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-3xl mx-auto"
         >
           <EventDetail icon={<Calendar className="h-5 w-5 text-indigo-400" />} text="June 30th-1st 2025" />
-          <EventDetail icon={<MapPin className="h-5 w-5 text-indigo-400" />} text="School Classrooms" />
-          <EventDetail icon={<Users className="h-5 w-5 text-indigo-400" />} text="Teams of 5" />
+          <EventDetail icon={<MapPin className="h-5 w-5 text-indigo-400" />} text="Whitefield Global School" />
+          <EventDetail icon={<Users className="h-5 w-5 text-indigo-400" />} text="Teams of 4 - 5" />
         </motion.div>
         
         <motion.div
@@ -63,23 +63,16 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="mb-12"
         >
-          <div className="mb-8">
-            <img 
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="School Logo" 
-              className="h-24 mx-auto rounded-lg shadow-lg"
-            />
-          </div>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-8">
             <Link 
               to="/register" 
-              className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:-translate-y-1"
+              className="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform hover:-translate-y-1 opacity-90 hover:scale-105" // made the button ivisible for some time 
             >
               Register Now
             </Link>
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://chat.whatsapp.com/BoaQ7SdMP8jIbRL4RqXTND" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="px-8 py-3 rounded-full bg-slate-800 text-white font-medium text-lg hover:bg-slate-700 transition-all duration-300"

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
 function Login() {
-    const backendLink = "https://wof-backend-06a981c05bce.herokuapp.com"
+    const backendLink = "https://wof-backend-06a981c05b ce.herokuapp.com"
     const [message, setMessage] = useState()
     const navigate = useNavigate()
 
@@ -43,7 +43,7 @@ function Login() {
     return (
         <div>
             <form method="post" onSubmit={handleLoginSubmit} style={{"marginTop": "20%"}}>
-                <h1>Login Page</h1>
+                <h1 style="color:white">Login Page</h1>
                 <label htmlFor="team_name">Team Name</label>
                 <input type="text" placeholder="Team Name" name="team_name" id="team_name" />
                 
